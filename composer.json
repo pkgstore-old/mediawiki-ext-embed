@@ -1,0 +1,40 @@
+{
+  "name": "pkgstore/mediawiki-ext-embed",
+  "type": "mediawiki-extension",
+  "description": "MediaWiki embed extension.",
+  "license": "MIT",
+  "homepage": "https://pkgstore.github.io/",
+  "keywords": [
+    "mediawiki",
+    "embed"
+  ],
+  "authors": [
+    {
+      "name": "Kitsune Solar",
+      "email": "kitsune.solar@gmail.com",
+      "homepage": "https://kitsune.solar/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/pkgstore/mediawiki-ext-embed/issues",
+    "source": "https://github.com/pkgstore/mediawiki-ext-embed"
+  },
+  "require": {
+    "composer/installers": "^1.9",
+    "pkgstore/mediawiki-ext-kernel": "*",
+    "embed/embed": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "MW_EXT_Embed.class.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "prepend-autoloader": false
+  },
+  "extra": {
+    "installer-name": "MW_EXT_Embed"
+  }
+}
